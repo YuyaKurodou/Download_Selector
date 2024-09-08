@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Download Selector",
+    "version": "1.0",
+    "description": "Choose a folder to save downloaded files when enabled.",
+    "permissions": ["downloads", "storage"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+  }
+  
